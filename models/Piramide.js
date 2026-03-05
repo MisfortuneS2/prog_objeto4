@@ -16,7 +16,7 @@ class Piramide{
 
     // cálculo do volume
     calcularVol(){
-        return ((this.b * this.h) / 2) / 3
+        return (((this.b * this.h) * this.h) / 2) / 3
     }
 }
 
