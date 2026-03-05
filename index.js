@@ -22,10 +22,14 @@ do{
         
         let b = Number(rl.question(`Qual o valor da base?`))
         let h = Number(rl.question(`Qual o valor da altura?`))
-        let piramide = new Piramide(b,h)
-        let areaTotal = piramide.calcularATotal()
-        let volume = piramide.calcularVol()
+        let prisma = new Prisma(b,h)
+        let areaLateral = prisma.calcularALateral()
+        let areaBase = prisma.calcularABase()
+        let areaTotal = prisma.calcularATotal()
+        let volume = prisma.calcularVol()
 
+        console.log(`A área lateral do prisma de base ${b} e altura ${h} é: ${areaLateral.toFixed(3)}`)
+        console.log(`A área da base do prisma de base ${b} e altura ${h} é: ${areaBase.toFixed(3)}`)
         console.log(`A área total do prisma de base ${b} e altura ${h} é: ${areaTotal.toFixed(3)}`)
         console.log(`O volume do prisma de base ${b} e altura ${h} é: ${volume.toFixed(3)}`)
       

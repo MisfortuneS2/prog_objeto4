@@ -8,7 +8,18 @@ class Prisma{
         this.h = h
     }
 
-    //cálculo da área total
+    // cálculo da área lateral
+    
+    calcularALateral(){
+        return (this.b * this.h) * 5
+    }
+
+    // cálculo da área da base
+    calcularABase(){
+        return (this.b * this.h) / 2
+    }
+
+    // cálculo da área total
     calcularATotal(){
         return ((this.b * this.h) * 5) + ((this.b * this.h) / 2)
     }
